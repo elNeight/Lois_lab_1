@@ -2,26 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36a68572-5c88-4135-be11-aea9b37a6072" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LOIS_1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/file1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/file2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/file3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/file4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lab1/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lab1/Table.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lab1/dto/Element.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lab1/implication/GoguenImplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lab1/implication/Implication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lab1/reader/FileReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lab1/reader/Reader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lab1/tnorma/TNorma.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lab1/tnorma/TNormaImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab1/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab1/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab1/Matrix.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,14 +31,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/serzh/OneDrive/Рабочий стол/LOIS_1"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/serzh/OneDrive/Рабочий стол/LOIS_1&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\serzh\OneDrive\Рабочий стол\LOIS_1" />
@@ -65,7 +48,7 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="lab1.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lab1.Main" />
       <module name="LOIS_1" />
       <extension name="coverage">
@@ -80,7 +63,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.lab1.Main" />
       </list>
     </recent_temporary>
   </component>

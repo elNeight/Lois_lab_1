@@ -92,12 +92,12 @@ public class Main {
         //-----------------------------------------
 
 
-        Table table = new Table(new TNormaImpl(), new GoguenImplication());
+        Matrix matrix = new Matrix(new TNormaImpl(), new GoguenImplication());
         List<Double> firstSet = set1.stream().map(Element::getValue).toList();
         List<Double> secondSet = set2.stream().map(Element::getValue).toList();
 
-        table.buildTable(firstSet, secondSet);
-        List<Double> conclusion = table.getConclusion(fuzzy);
+        matrix.buildMatrix(firstSet, secondSet);
+        List<Double> conclusion = matrix.getConclusion(fuzzy);
 
         System.out.println(conclusion);
 
