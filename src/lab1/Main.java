@@ -13,23 +13,21 @@ import java.util.Scanner;
 import java.util.stream.Collectors;
 
 public class Main {
+    private static final String[] FILES = {"files//file1.txt", "files//file2.txt", "files//file3.txt", "files//file4.txt"};
+    private static List<List<Element>> facts = new ArrayList<>();
 
+    private static void loadFiles() throws FileNotFoundException {
+        Reader reader = new FileReader();
+        for (String path : FILES) {
+            facts.add(reader.readFile(path));
+        }
+    }
 
     public static void main(String[] args) throws FileNotFoundException {
 
-        args = new String[]{
-                "files//file1.txt",
-                "files//file2.txt",
-                "files//file3.txt",
-                "files//file4.txt"
-        };
-
-        List<List<Element>> facts = new ArrayList<>();
-        Reader reader = new FileReader();
-        for (String path : args) facts.add(reader.readFile(path));
+        loadFiles();
 
         int number = 1;
-
         for (int i = 0; i < facts.size(); i++) {
             for (int j = 0; j < facts.size(); j++, number++) {
                 System.out.println(number + ":     " +
@@ -38,10 +36,19 @@ public class Main {
                         facts.get(j).get(0).getSetName());
             }
         }
-        System.out.print("enter rule number to apply : ");
+
 
         Scanner scanner = new Scanner(System.in);
-        int option = scanner.nextInt();
+        int option;
+        while(true){
+            System.out.print("enter rule number to apply : ");
+            option = scanner.nextInt();
+            if (option < 1 || option >= number) {
+                System.out.println("invalid user input: should be between 1 and " + (number - 1));
+                continue;
+            }
+            break;
+        }
 
         List<Element> set1 = null;
         List<Element> set2 = null;
@@ -57,21 +64,22 @@ public class Main {
             }
         }
 
-        if (option < 1 || option > number)
-            throw new IllegalArgumentException("invalid user input: should be between 1 and " + (number - 1));
-
         System.out.println("You have chosen rule " + option + " : " + implicationName);
 
         List<Double> fuzzy = new ArrayList<>();
 
         for (int i = 0; i < set1.size(); i++) {
-            System.out.print("enter fuzzy for x" + (i + 1) + ":");
-            String str = scanner.next();
-            double v = Double.parseDouble(str);
-            if (v < 0 || v > 1) {
-                throw new IllegalArgumentException("invalid user input: should be in [0, 1]");
+            while(true){
+                System.out.print("enter fuzzy for x" + (i + 1) + ":");
+                String str = scanner.next();
+                double v = Double.parseDouble(str);
+                if (v < 0 || v > 1) {
+                    System.out.println("invalid user input: should be in [0, 1]");
+                    continue;
+                }
+                fuzzy.add(v);
+                break;
             }
-            fuzzy.add(v);
         }
 
 
