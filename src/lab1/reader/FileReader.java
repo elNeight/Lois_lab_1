@@ -7,6 +7,7 @@ import java.io.FileNotFoundException;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
+import java.util.stream.Collectors;
 
 public class FileReader implements Reader {
     @Override
@@ -27,6 +28,6 @@ public class FileReader implements Reader {
                     String[] split = s.split(":");
                     return new Element(split[0], Double.parseDouble(split[1]), setName);
                 })
-                .toList();
+                .collect(Collectors.toList());
     }
 }

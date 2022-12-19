@@ -10,6 +10,7 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+import java.util.stream.Collectors;
 
 public class Main {
 
@@ -56,7 +57,8 @@ public class Main {
             }
         }
 
-        if (option < 1 || option > number) throw new IllegalArgumentException("Illegal argument");
+        if (option < 1 || option > number)
+            throw new IllegalArgumentException("invalid user input: should be between 1 and " + number);
 
         System.out.println("You have chosen rule " + option + " : " + implicationName);
 
@@ -66,6 +68,9 @@ public class Main {
             System.out.print("enter fuzzy for x" + (i + 1) + ":");
             String str = scanner.next();
             double v = Double.parseDouble(str);
+            if (v < 0 || v > 1) {
+                throw new IllegalArgumentException("invalid user input: should be in [0, 1]");
+            }
             fuzzy.add(v);
         }
 
@@ -94,8 +99,8 @@ public class Main {
 
 
         Matrix matrix = new Matrix(new TNormaImpl(), new GoguenImplication());
-        List<Double> firstSet = set1.stream().map(Element::getValue).toList();
-        List<Double> secondSet = set2.stream().map(Element::getValue).toList();
+        List<Double> firstSet = set1.stream().map(Element::getValue).collect(Collectors.toList());
+        List<Double> secondSet = set2.stream().map(Element::getValue).collect(Collectors.toList());
 
         matrix.buildMatrix(firstSet, secondSet);
         List<Double> conclusion = matrix.getConclusion(fuzzy);
