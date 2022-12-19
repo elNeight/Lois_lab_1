@@ -4,6 +4,14 @@
     <list default="true" id="36a68572-5c88-4135-be11-aea9b37a6072" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lab1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab1/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab1/Matrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab1/Matrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab1/dto/Element.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab1/dto/Element.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab1/implication/GoguenImplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab1/implication/GoguenImplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab1/implication/Implication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab1/implication/Implication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab1/reader/FileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab1/reader/FileReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab1/reader/Reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab1/reader/Reader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab1/tnorma/TNorma.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab1/tnorma/TNorma.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab1/tnorma/TNormaImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab1/tnorma/TNormaImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +39,8 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -61,17 +71,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.lab1.Main" />
@@ -86,8 +85,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1671388224919</updated>
+      <workItem from="1671451668893" duration="92000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
