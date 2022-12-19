@@ -63,8 +63,9 @@ public class Main {
         List<Double> fuzzy = new ArrayList<>();
 
         for (int i = 0; i < set1.size(); i++) {
-            System.out.print("enter fuzzy for y" + (i + 1) + ":");
-            double v = scanner.nextDouble();
+            System.out.print("enter fuzzy for x" + (i + 1) + ":");
+            String str = scanner.next();
+            double v = Double.parseDouble(str);
             fuzzy.add(v);
         }
 
@@ -74,7 +75,7 @@ public class Main {
         StringBuilder setString = new StringBuilder("{");
         for (int i = 0; i < set1.size(); i++) {
             setString
-                    .append("(y")
+                    .append("(x")
                     .append(i + 1)
                     .append(":")
                     .append(fuzzy.get(i))
@@ -99,12 +100,11 @@ public class Main {
         matrix.buildMatrix(firstSet, secondSet);
         List<Double> conclusion = matrix.getConclusion(fuzzy);
 
-        System.out.println(conclusion);
 
         setString.append("{");
         for (int i = 0; i < conclusion.size(); i++) {
             setString
-                    .append("(y")
+                    .append("(x")
                     .append(i + 1)
                     .append(":")
                     .append(conclusion.get(i))

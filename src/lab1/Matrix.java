@@ -27,12 +27,7 @@ public class Matrix {
         for (int i = 0; i < matrix.length; i++)
             for (int j = 0; j < matrix[i].length; j++)
                 matrix[i][j] = implication.evaluate(set1.get(i), set2.get(j));
-
-
-
     }
-
-
     public List<Double> getConclusion(List<Double> set) {
 
 
