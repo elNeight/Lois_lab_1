@@ -58,7 +58,7 @@ public class Main {
         }
 
         if (option < 1 || option > number)
-            throw new IllegalArgumentException("invalid user input: should be between 1 and " + number);
+            throw new IllegalArgumentException("invalid user input: should be between 1 and " + (number - 1));
 
         System.out.println("You have chosen rule " + option + " : " + implicationName);
 
